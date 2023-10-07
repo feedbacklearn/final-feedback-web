@@ -19,7 +19,7 @@
 }
 .navbar{
     height: 60px;
-    background-color: rgb(88, 255, 244);
+    background-color: rgb(209, 83, 0);
     color: black;
    display: flex;
    align-items: center;
@@ -33,7 +33,7 @@
  
 }
 .logo{
-    background-image: url(image/feedbacklearn\ logo\ [Recovered]-02.png);
+    background-image: url("image/feedbacklearn\ logo\ done-01.png");
     background-size: cover;
     height: 50px;
     width: 100%;
@@ -120,7 +120,7 @@ border-radius: 4px;
 
 /** Box 4**/
 span{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 
 }
 
@@ -147,6 +147,7 @@ span{
     color: white;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .panel-option p{
@@ -156,37 +157,57 @@ span{
 
 .panel_option{
     width: 30%;
-    font-size: 0.85rem;
+    font-size: 2.5rem;
      
 }
+.panel-all div i{
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+}
+     
 
 .panel-deals{
     font-size: 0.85rem;
     font-weight: 700;
 }
+.panel-all div span{
+    padding: 5px;
+    cursor: pointer;
+   
+    
+}
+.panel-deals span{
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+}
+.panel-option p:hover{
+    border: 1px solid white;
+}
+.panel-all:hover{
+    border: 1px solid white;
+}
+.panel-deals:hover{
+    border: 1px solid white;
+}
 
 
 /** HERO SECTION**/
-.hero-section {
-   
-    height: 579px;
-    display: flex;
-    position: relative;
-    width:100%;
-    box-sizing: border-box;
-   background-image: fixed;
-   justify-content: space-between;
 
-}
+
 .sec-1 {
     position: relative;
-    width: 1650px;
-    height: 100%;
+    width: 100%;
+    height: 1190px;
     box-sizing: border-box;
 }
 
 .slide img {
-    width: 1650px;
+    width: 1250px;
    height: 100%;  
    justify-content: space-evenly;  
 
@@ -196,57 +217,66 @@ span{
     position: relative;
     width:100%;
     height: auto;
-    justify-content: space-evenly;
+    
 
 }
 .slider{
-    width: 100%;
-            height: 100vh;
-            display: flex;
+            width: 100%;
+            height: 560px;
+            position:relative;
             overflow: hidden;
 }
 
 .image-box{
     display: flex;
-    position: static;
-    animation: carousel 10s alternate infinite;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-
-
+    position: absolute;
+    animation: carousel 50s alternate infinite;
+   
 }
 @keyframes carousel {
-    0%{
-        left: 0;
-    }
-    10%{
-        left: -0%;
-    }
-    20%{
-        left: -1360px;
+   0% {
+    left: 0;
+}
+5%{
+    left: 0%;
 
-    }
-    30%{
-        left: -2720px;
-    }
-    40%{
-        left: -4080px;
-    }
-    50%{
-        left: -5440px;
-    }
-    60%{
-        left: -6800px;
-    }
-    70%{
-        left: -8160px;
-    }
-    
-    100%{
-        left: calc(-1360px*8px);
-    }
+}
+20%{
+    left: -1260px;
+
+}
+35%{
+    left: -2720px;
+
+}
+50%{
+    left: -3680px;
+
+}
+
+62%{
+    left: calc(-1260*2px);
+
+}
+76%{
+    left: calc(-1260*2px);
+}
+82%{
+    left: calc(-1260*3px);
+
+}
+90%{
+    left: calc(-1260*3px);
+
+}
+95%{
+    left: calc(-1260px*4px);
+}
+
+100%{
+    left: calc(-1260*4px);
+
+}
 }
 .hero-massage{
     background-color: white;
@@ -298,17 +328,17 @@ border-radius: 6px;
     background-color: wheat;
 }
 
-.box{
-  /*  border: 2px solid khaki; */
+/*.box
+   border: 2px solid khaki; 
     height:1060px;
     width: 26%;
     background-color: rgb(255, 255, 255);
     padding: 20px 0px 15px;
     margin-top: 19px;
    align-items: center;
- }
+ 
 
-.box-image{
+.box-image
     height:890px;
     width: 100%;
     background-size: cover;
@@ -316,27 +346,29 @@ border-radius: 6px;
     margin-bottom: 2rem;
   
 
- }
-.box-content{
+ 
+.box-content
     align-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
     justify-content: space-evenly;
- }
+ 
 
 
-.box-content p{
+.box-content p
     color: rgb(86, 163, 14);
- }
+ /*
+
  /** Footer **/
 .footer{
-    margin-top: 25px;
+   width: 100%;
+   height: 490px;
+   transition: all 0.2s;
 }
 
 
 
-
-.foot-panel1 {
+.backtop {
     background-color:#37475a;
     color: white;
     height: 50px;
@@ -344,6 +376,7 @@ border-radius: 6px;
     justify-content: center;
     align-items: center;  
     font-size: 0.85rem;
+    cursor: pointer;
 }
 
 
@@ -374,7 +407,7 @@ ul a{
     align-items: center;
 }
 .logo1 {
-    background-image: url(image/feedbacklearn\ logo\ [Recovered]-02.png);
+    background-image: url("image/feedbacklearn\ logo\ done-01.png");
     background-size: cover;
     height: 30px;
     width: 200px;
@@ -407,6 +440,11 @@ ul a{
     overflow-y: scroll;
     box-shadow: 2px 2px 30px black;
 
+}
+.line{
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(173, 182, 198);
 }
  .hdn-head{
     background-color: #37475a;
