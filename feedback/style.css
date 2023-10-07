@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: sticky;
+    
 }
 .navbar{
     height: 60px;
@@ -24,7 +24,8 @@
    display: flex;
    align-items: center;
    justify-content: space-evenly;
-
+ cursor: pointer;
+ position: sticky;
 }
 .nav-logo {
     height: 60px;
@@ -294,39 +295,56 @@ span{
  }
 
  /*** upload section**/
-  
- .upload-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: rgb(181, 216, 216);
- height: 100%;
- 
-
- }
- .upload {
-    justify-content: space-evenly;
-    align-items: center;
- }
  .upload-section {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(135, 83, 19);
-    width: 100%;
-    height: 100%;
-border-radius: 6px;
- }
- .upload-icon{
-    width: 100px;
-    display: flex;
-    justify-content: space-evenly;
+    width: 85%;
+    height: 200px;
+    margin: 500px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     align-items: center;
-    font-size: 1.2rem;
-    background-color: rgb(242, 179, 91);
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    background-color: wheat;
 }
+ .upload-btn {
+    width: 50%;
+    display: flex;
+    padding: 30px 30px 30px 30px auto;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #aaa7a7;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 55px auto;
+}
+.upload-section h1 {
+    color: #7c1010;
+    text-align: center;
+   justify-content: space-evenly;
+}
+.upload-section p {
+    color: #7c1010;
+    text-align: center;
+    font-size: 25px;
+   
+}
+
+/* Paragraph style */
+.upload-btn a {
+    color: #010101;
+    text-align: center;
+    margin-left: 55px;
+}
+.upload-btn:hover {
+    background-color: #8ad0ff;
+}
+
+/* Style for file input */
+
+/* Style for the selected file text */
+
 
 /*.box
    border: 2px solid khaki; 

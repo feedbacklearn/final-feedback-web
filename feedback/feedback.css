@@ -32,7 +32,7 @@
 body {
     font-family: var(--header-font);
     /* Apply the font family to body */
-    background-image: url('https://m-cdn.phonearena.com/images/article/64576-wide-two_1200/The-Best-Phones-to-buy-in-2023---our-top-10-list.webp?1695023883');
+    background-color: wheat;
     /* Path to your background image */
     background-size: cover;
     background-repeat: no-repeat;
@@ -165,11 +165,31 @@ button {
 .btn35 {
     margin: 73px 476px;
 }
+.upload-btn {
+    display: flex;
+    padding: 30px 30px 30px 30px auto;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #aaa7a7;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 55px ;
+    width: 12%;
+}
+.upload-btn a {
+    color: #010101;
+    text-align: center;
+    margin-left: 15px;
+}
 
 
-button:hover {
-    background: #ff04ff;
-    transform: translateY(-10px);
+.upload-btn:hover {
+    background: #dfd3df;
+    transform: translateY(-2px);
     /* background: var(--secondary-color);*/
     /* Updated hover color to secondary color */
 }
