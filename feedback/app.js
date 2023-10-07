@@ -37,9 +37,9 @@ backtop.addEventListener("click", () => {
     });
     })
 })
-const sidebar = document.querySelector(" .sidebar");
+const sidebar = document.querySelector(" .sidebar.active");
 const cross = document.querySelector(" .fa-xmark");
-const black = document.querySelector(" .black");
+const black = document.querySelector(" .black.active");
 const sidebtn = document.querySelector(" .second-1");
  
 sidebtn.addEventListener('click', () =>{

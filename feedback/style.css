@@ -11,6 +11,12 @@
     height: 100%;
     box-sizing: border-box;
 }
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+}
 .navbar{
     height: 60px;
     background-color: rgb(88, 255, 244);
@@ -181,7 +187,8 @@ span{
 
 .slide img {
     width: 1650px;
-   height: 100%;    
+   height: 100%;  
+   justify-content: space-evenly;  
 
 
 }
@@ -189,21 +196,25 @@ span{
     position: relative;
     width:100%;
     height: auto;
+    justify-content: space-evenly;
 
 }
 .slider{
     width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 590px;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
 }
 
 .image-box{
     display: flex;
-    position: absolute;
-    animation: carousel 15s alternate infinite;
-justify-content: space-evenly;
-justify-items: flex-start;
+    position: static;
+    animation: carousel 10s alternate infinite;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
 
 }
 @keyframes carousel {
@@ -215,6 +226,22 @@ justify-items: flex-start;
     }
     20%{
         left: -1360px;
+
+    }
+    30%{
+        left: -2720px;
+    }
+    40%{
+        left: -4080px;
+    }
+    50%{
+        left: -5440px;
+    }
+    60%{
+        left: -6800px;
+    }
+    70%{
+        left: -8160px;
     }
     
     100%{
